@@ -561,6 +561,138 @@ color: white;
   margin-left: 30px;
 }
 
+/* ------------------------------------------------------- PÁGINA SERVICIO -------------------------------------------------------------------*/
+
+/* --- SECCIÓN SERVICIOS CON FLEXBOX ---*/
+.servicesBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.imageService {
+  background-image: url(/assets/imagenes/Servicios.png);
+  background-size: 100%;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+}
+
+.titleServicio {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 15%;
+}
+
+.titleServicio p {
+  width: auto;
+  height: 5%;
+  background-color: #bf4953;
+  font-family: "Dosis";
+  font-size: 40px;
+  font-weight: bold;
+  padding: 5%;
+  border-radius: 20%;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.subTitleService {
+  width: 100%;
+  height: 30%;
+  background-color: #bf4953;
+}
+.subTitleService h2 {
+  width: 100%;
+  height: 20%;
+  color: #ffffff;
+  font-family: "Dosis";
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: none;
+}
+/* --- SECCIÓN SERVICIOS CON GRILLAS ---*/
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: none;
+
+  grid-template-columns: 35% auto;
+  grid-template-rows: 24% 24% 24% 24%;
+
+  column-gap: 15px;
+  row-gap: 15px;
+
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  justify-items: stretch;
+  align-items: stretch;
+
+  background-image: url(/assets/imagenes/Servicios.png);
+  background-size: 100%;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  background-color: #bf4953;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.text1 h3,
+.text2 h3,
+.text3 h3,
+.text4 h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Dosis";
+}
+
+.text1 li,
+.text2 li,
+.text3 li,
+.text4 li {
+  font-family: "Dosis";
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+
+
 /* ----------------------------------------------------------- PÁGINA CONTACTO ------------------------------------------------------------------*/
 .imageContact {
   background-image: url(/assets/imagenes/Contactenos.png);
