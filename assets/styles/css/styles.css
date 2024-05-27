@@ -166,7 +166,7 @@ body{
   display: flex;
   width: auto;
   height: 700px;
-  margin  0;
+  margin: 0%;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -353,7 +353,6 @@ color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: ;
  }
 
  .pieBox1 {
@@ -478,14 +477,12 @@ color: white;
 
 
 /* ----- PÁGINA CONTACTO -----*/
-.imageContact{
-  background-image: url(./../imagenes/Contactenos.png);
+.imageContact {
+  background-image: url(/assets/imagenes/Contactenos.png);
   background-size: 100%;
   background-repeat: no-repeat, repeat;
   width: 100%;
   height: auto; 
-  
-
 }
 .titleContact {
   width: 100%;
