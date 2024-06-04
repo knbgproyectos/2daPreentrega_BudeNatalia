@@ -502,7 +502,7 @@ main {
 
 @media screen and (max-width:480px) {
   .formBox {
-      width: 96%;
+      width: 100%;
       height: 130%;
       border-radius: 40px;
       padding: 4%;
