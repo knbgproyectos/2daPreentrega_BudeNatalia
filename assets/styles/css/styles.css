@@ -446,7 +446,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 464px;
+      width: 480px;
       height:auto;
     }
 }
@@ -502,8 +502,8 @@ main {
 
 @media screen and (max-width:480px) {
   .formBox {
-      width: 430px;
-      height: 556px;
+      width: 96%;
+      height: 130%;
       border-radius: 40px;
       padding: 4%;
       background-color: #bf4953;
@@ -556,7 +556,7 @@ main {
 
 @media screen and (max-width:480px) {
   .infoBox {
-      width: 450px;
+      width: 100%;
       height: 556px;
       border-radius: 40px;
       padding: 2%;
