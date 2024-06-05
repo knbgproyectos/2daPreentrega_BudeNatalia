@@ -1,0 +1,1024 @@
+body {
+    background-color: #f2f2f2;
+  }
+  @font-face {
+    font-family: "Dosis";
+    src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
+  }
+  
+  /* ----------------- MENÚ con Boostrap -----------------*/
+  .container-fluid {
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: #bf4953;
+  }
+  .navbar {
+    background-color: #bf4953;
+  }
+  .navbar-nav {
+    margin-left: 2%;
+  }
+  .me-auto {
+    margin-right: 2% !important;
+  }
+  .nav-link {
+    color: #ffffff;
+  }
+  .logo1 {
+    width: 250px;
+    height: 40px;
+    margin-left: 3%;
+  }
+  .logo2 {
+    width: 50px;
+    height: 40px;
+    border-radius: 10%;
+  }
+  .logo3 {
+    width: 50px;
+    height: 40px;
+    border-radius: 10%;
+  }
+  .iconos {
+    display: flex;
+    margin-left: 4%;
+  }
+  #navbarColor01 {
+    justify-content: space-around;
+  }
+  
+  /* --------------------------------------------- PÁGINA INDEX ------------------------------------------*/
+  /*---- imagen pantalla completa ---*/
+  /*.image-container {
+    position: flex;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 150%;
+  }
+  
+  
+  /* ---- OPCIONES (Papeleria - Talista - Servicios) ----*/
+  
+  @media (max-width: 480px) {
+    .image-container {
+      position: flex;
+      width: auto;
+      height: 100%;
+      background-color: none;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .image-container img {
+      width: 100%;
+      height: 150%;
+    }
+    .titleOpciones {
+      display: block;
+      width: 100%;
+      height: 120px;
+      background-color: #bf4953;
+    }
+    .titleOpciones h2 {
+      width: 100%;
+      color: #ffffff;
+      font-family: "Dosis";
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background-color: #bf4953;
+      padding-top: 35px;
+    }
+    .Opciones {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 50%;
+    }
+  
+    .opcion1,
+    .opcion2,
+    .opcion3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #bf4953;
+      width: 100%;
+      height: 80%;
+      padding: 5%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .opcion1,
+    .opcion2,
+    .opcion3,
+    a,
+    h1 {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family: "Dosis";
+      font-weight: bold;
+      align-items: center;
+      border-radius: 10px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .image-container {
+      position: flex;
+      width: auto;
+      height: 100%;
+      background-color: none;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .image-container img {
+      width: 100%;
+      height: 150%;
+    }
+    .titleOpciones {
+      display: block;
+      width: 100%;
+      height: 120px;
+      background-color: #bf4953;
+    }
+    .titleOpciones h2 {
+      width: 100%;
+      color: #ffffff;
+      font-family: "Dosis";
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background-color: #bf4953;
+      padding-top: 35px;
+    }
+    .opciones {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: auto;
+      height: 400px;
+      margin: 0;
+      background-color: none;
+    }
+    .opcion1,
+    .opcion2,
+    .opcion3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #bf4953;
+      width: 30%;
+      height: 40%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .opcion1,
+    .opcion2,
+    .opcion3,
+    a, h1 {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family: "Dosis";
+      font-weight: bold;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .opciones a :hover {
+      background-color: #f2949c;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1279px) {
+    .image-container {
+      position: flex;
+      width: auto;
+      height: 100%;
+      background-color: none;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .image-container img {
+      width: 100%;
+      height: 150%;
+    }
+    .titleOpciones {
+      display: block;
+      width: 100%;
+      height: 120px;
+      background-color: #bf4953;
+    }
+    .titleOpciones h2 {
+      width: 100%;
+      color: #ffffff;
+      font-family: "Dosis";
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background-color: #bf4953;
+      padding-top: 35px;
+    }
+    .opciones {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: auto;
+      height: 400px;
+      margin: 0;
+      background-color: none;
+    }
+    .opcion1,
+    .opcion2,
+    .opcion3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #bf4953;
+      width: 30%;
+      height: 50%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .opcion1,
+    .opcion2,
+    .opcion3,
+    a, h1 {
+      text-decoration: none;
+      color: white;
+      font-family: "Dosis";
+      font-size: 25px;
+      font-weight: bold;
+      align-items: center;
+      border-radius: 40px;
+    }
+    .opciones a :hover {
+      background-color: #f2949c;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .image-container {
+      position: flex;
+      width: auto;
+      height: 100%;
+      background-color: none;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .image-container img {
+      width: 100%;
+      height: 150%;
+    }
+    .titleOpciones {
+      display: block;
+      width: 100%;
+      height: 120px;
+      background-color: #bf4953;
+    }
+    .titleOpciones h2 {
+      width: 100%;
+      color: #ffffff;
+      font-family: "Dosis";
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background-color: #bf4953;
+      padding-top: 35px;
+    }
+    .opciones {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: auto;
+      height: 400px;
+      margin: 0;
+      background-color: none;
+    }
+    .opcion1,
+    .opcion2,
+    .opcion3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #bf4953;
+      width: 30%;
+      height: 50%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .opcion1,
+    .opcion2,
+    .opcion3,
+    a, h1 {
+      text-decoration: none;
+      color: white;
+      font-family: "Dosis";
+      font-size: 30px;
+      font-weight: bold;
+      align-items: center;
+      border-radius: 40px;
+    }
+    .opciones a :hover {
+      background-color: #f2949c;
+    }
+  }
+  
+  /*--------------------------------------- PÁGINA EMPRESA -------------------------------------*/
+  /* --- SOBRE NOSOTROS ---*/
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    margin: 0;
+    background-color: #bf4953;
+  }
+  
+  .image-video {
+    width: 25%;
+    margin: 100px;
+    padding-left: 10px;
+  }
+  
+  .nosotros {
+    width: 50%;
+    margin: 10px;
+    text-align: justify;
+    font-family: "Dosis";
+    font-size: 20px;
+    background-color: #bf4953;
+    padding: 10px;
+    color: white;
+  }
+  .nosotros ul li {
+    list-style-type: disc;
+    color: white;
+  }
+  
+  /* --- SECCiÓN SOBRE NOSOTROS --- */
+  /*--- imagen sobre nosotros ---*/
+  .image-empresa {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .image-empresa img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  /* ------------------- SECCIÓN CONTÁCTENOS ------------------- */
+  .contactenos {
+    width: 100%;
+    height: 700px;
+    font-family: "Dosis";
+    padding-bottom: 1%;
+  }
+    .contactenos h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #bf4953;
+    text-align: center;
+  }
+    .contactenos p {
+      font-family: "Dosis";  
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+    .contactBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width:480px) {
+    .contactenos {
+        width: 100%;
+        height: auto;
+        font-family: "Dosis";  
+        padding-top: 5%;
+      }    
+      .contactenos h1 {
+        font-size: 35px;
+        font-weight: bold;
+        color: #bf4953;
+        text-align: center;
+      }    
+      .contactenos p {
+        font-family: "Dosis";  
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 25px;
+      }
+      .contactBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 480px;
+        height:auto;
+      }
+  }
+  /* ------------------ FORMULARIO DE CONTACTO --------------------*/
+  .formBox {
+    width: 45%;
+    height: 556px;
+    border-radius: 40px;
+    padding: 2%;
+    margin: 1%;
+    background-color: #bf4953;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Dosis";  
+    font-size: 20px;
+    color: #ffffff;
+  }
+  #userName {
+    width: 100%;
+    height: 20px;
+    font-family: "Dosis";
+  }
+  #userTelephone {
+    width: 100%;
+    height: 20px;
+    font-family: "Dosis";
+  }
+  #userEmail {
+    width: 100%;
+    height: 20px;
+    font-family: "Dosis";
+  }
+  #userOption {
+    width: 100%;
+    height: 26px;
+    font-family: "Dosis";
+  }
+  #fileuserDescription {
+    width: 100%;
+    height: 200px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    display: block;
+    font-family: "Dosis";
+  }
+  .botonesBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: "Dosis";
+  }
+  
+  @media screen and (max-width:480px) {
+    .formBox {
+        width: 100%;
+        height: 130%;
+        border-radius: 40px;
+        padding: 4%;
+        background-color: #bf4953;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: "Dosis";  
+        font-size: 16px;
+        color: #ffffff;
+      }
+      .botonesBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: "Dosis";
+      }
+  }
+  
+  /* ----------------- INFORMACIÓN DE CONTACTO ---------------------*/
+  .infoBox {
+    width: 45%;
+    height: 556px;
+    border-radius: 40px;
+    padding: 1%;
+    margin: 1%;
+    background-color: #bf4953;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: start;
+    color: #ffffff;
+  }
+  .iconoslist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0%;
+    align-items: center;
+  }
+  .infoList p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-top: 23%;
+    font-family: "Dosis";
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  @media screen and (max-width:480px) {
+    .infoBox {
+        width: 100%;
+        height: 556px;
+        border-radius: 40px;
+        padding: 2%;
+        background-color: #bf4953;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: #ffffff;
+      }
+      .iconoslist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .infoList p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        font-family: "Dosis";
+        font-size: 20px;
+        padding-top: 15%;
+      }
+  }
+  
+  /* ------------------- FOOTER ----------------------*/
+  
+  .piedepagina {
+    width: auto;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .pieBox1 {
+    width: 25%;
+    height: 100%;
+    color: #eb3238;
+  }
+  
+  .linkInicio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .linkInicio img {
+    width: 230px;
+    height: 50px;
+    margin-top: 5px;
+  
+    color: #eb3238;
+  }
+  
+  .columnaBox1 {
+    width: auto;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .iconosBox1 {
+    width: 10%;
+    height: 80%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: none;
+  }
+  
+  .infoBox1 p {
+    width: 100%;
+    height: auto;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: "Dosis";
+    font-size: 15px;
+    font-weight: bold;
+    background-color: none;
+  }
+  
+  .pieBox2 {
+    width: 25%;
+    height: 100%;
+  }
+  .redesSociales {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 110px;
+  }
+  
+  .pieBox3 {
+    width: 25%;
+    height: 100%;
+    color: #eb3238;
+    padding: 5px;
+  }
+  .listacontacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: left;
+    padding: 10% 10% 10% 35%;
+  }
+  .listacontacto a {
+    padding: 5%;
+    color: #eb3238;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .pieBox4 {
+    width: 25%;
+    height: 100%;
+    color: #eb3238;
+    padding: 5px;
+  }
+  .listaopciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: left;
+    padding: 10% 10% 10% 35%;
+  }
+  .listaopciones a {
+    padding: 5%;
+    color: #eb3238;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .derechos {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: 30px;
+  }
+  .derechos p {
+    font-family: "Dosis";
+    font-size: 15px;
+    color: #eb3238;
+    text-align: center;
+  }
+  
+  /* ------------------------------------------------------- PÁGINA TALISTA -------------------------------------------------------------------*/
+  .talistaBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url(/assets/imagenes/talista.png);
+    background-size: 100%;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+  }
+  
+  .titleTalista {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 15%;
+  }
+  
+  .titleTalista p {
+    width: auto;
+    height: 5%;
+    background-color: #bf4953;
+    font-family: "Dosis";
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5%;
+    border-radius: 20%;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+  .subTitleTalista {
+    width: 100%;
+    height: 30%;
+    background-color: #bf4953;
+  }
+  .subTitleTalista h2 {
+    width: 100%;
+    height: 20%;
+    color: #ffffff;
+    font-family: "Dosis";
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: none;
+  }
+  
+  .textTalista {
+    width: auto;
+    height: 400px;
+    background-color: #bf4953;
+    border-radius: 20px;
+    margin: 20px 50px 20px 50px;
+    padding: 40px 40px 20px 40px;
+  }
+  .textTalista p {
+    color: #ffffff;
+    font-family: "Dosis";
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  .textTalista a {
+    color: #ffffff;
+    font-family: "Dosis";
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  .grid-containerTalista {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: none;
+    grid-template-areas:
+      "imageLista lista"
+      "imageCotizar cotizar"
+      "imageConfirmar confirmar"
+      "imageRetirar retirar";
+  
+    grid-template-columns: 25% auto;
+    grid-template-rows: 24% 24% 24% 24%;
+  
+    column-gap: 15px;
+    row-gap: 15px;
+  
+    justify-content: center;
+    align-content: space-evenly;
+  
+    justify-items: stretch;
+    align-items: stretch;
+  
+    background-image: url(./../imagenes/talista.png);
+    background-size: 100%;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    width: 94%;
+    height: auto;
+  }
+  
+  .imageLista,
+  .imageCotizar,
+  .imageConfirmar,
+  .imageRetirar {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .lista,
+  .cotizar,
+  .confirmar,
+  .retirar {
+    background-color: #bf4953;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .lista h3,
+  .cotizar h3,
+  .confirmar h3,
+  .retirar h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Dosis";
+  }
+  
+  .lista p,
+  .cotizar p,
+  .confirmar p,
+  .retirar p {
+    font-family: "Dosis";
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 15px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+  }
+  
+  /* ------------------------------------------------------- PÁGINA SERVICIO -------------------------------------------------------------------*/
+  
+  /* --- SECCIÓN SERVICIOS CON FLEXBOX ---*/
+  .servicesBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  .imageService {
+    background-image: url(/assets/imagenes/Servicios.png);
+    background-size: 100%;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+  }
+  
+  .titleServicio {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 15%;
+  }
+  
+  .titleServicio p {
+    width: auto;
+    height: 5%;
+    background-color: #bf4953;
+    font-family: "Dosis";
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5%;
+    border-radius: 20%;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+  .subTitleService {
+    width: 100%;
+    height: 30%;
+    background-color: #bf4953;
+  }
+  .subTitleService h2 {
+    width: 100%;
+    height: 20%;
+    color: #ffffff;
+    font-family: "Dosis";
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: none;
+  }
+  /* --- SECCIÓN SERVICIOS CON GRILLAS ---*/
+  .grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: none;
+  
+    grid-template-columns: 35% auto;
+    grid-template-rows: 24% 24% 24% 24%;
+  
+    column-gap: 15px;
+    row-gap: 15px;
+  
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  
+    justify-items: stretch;
+    align-items: stretch;
+  
+    background-image: url(/assets/imagenes/Servicios.png);
+    background-size: 100%;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+  }
+  
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text1,
+  .text2,
+  .text3,
+  .text4 {
+    background-color: #bf4953;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .text1 h3,
+  .text2 h3,
+  .text3 h3,
+  .text4 h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Dosis";
+  }
+  
+  .text1 li,
+  .text2 li,
+  .text3 li,
+  .text4 li {
+    font-family: "Dosis";
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 15px;
+    letter-spacing: 1px;
+  }
+  
+  /* ----------------------------------------------------------- PÁGINA CONTACTO ------------------------------------------------------------------*/
+  .imageContact {
+    background-image: url(/assets/imagenes/Contactenos.png);
+    background-size: 100%;
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    height: auto;
+  }
+  .titleContact {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 20%;
+  }
+  .titleContact p {
+    width: auto;
+    height: 5%;
+    background-color: #bf4953;
+    font-family: "Dosis";
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5%;
+    border-radius: 20%;
+    color: #ffffff;
+  }
+  

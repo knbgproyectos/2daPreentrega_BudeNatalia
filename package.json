@@ -1,0 +1,26 @@
+{
+  "name": "2dapreentrega_budenatalia",
+  "version": "1.0.0",
+  "description": "Se añade SASS al proyecto",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knbgproyectos/2daPreentrega_BudeNatalia.git"
+  },
+  "keywords": [
+    "papeleria",
+    "lapapelera",
+    "talista",
+    "tienda",
+    "servicios"
+  ],
+  "author": "Bude Natalia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knbgproyectos/2daPreentrega_BudeNatalia.git"
+  },
+  "homepage": "https://github.com/knbgproyectos/2daPreentrega_BudeNatalia.git"
+}
