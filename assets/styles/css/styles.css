@@ -602,6 +602,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: #ffffff;
 }
 
 .pieBox1 {
@@ -711,6 +712,103 @@ main {
   font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+  .piedepagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: auto;
+    background-color: #ffffff;
+  }
+  .pieBox1 {
+    width: auto;
+    color: #eb3238;
+  }
+  .linkInicio {
+    width: 480px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .linkInicio img {
+    width: 230px;
+    height: 50px;
+    margin-top: 5px;
+    color: #eb3238;
+  }
+  .columnaBox1 {
+    width: 480px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .iconosBox1 img {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 17px;
+  }
+  .infoBox1 p {
+    width: 100%;
+    height: auto;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: "Dosis";
+    font-size: 15px;
+    font-weight: bold;
+    background-color: none;
+  }
+  .pieBox2 {
+    width: 480px;
+    height: 100%;
+    padding: 5%;
+  }
+  .redesSociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 0%;
+  }
+  .pieBox3 {
+    width: 480px;
+    height: 50%;
+    color: #eb3238;
+  }
+  .listacontacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: left;
+    padding: 5% 5% 0% 35%;
+  }
+  .listacontacto a {
+    color: #eb3238;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .pieBox4 {
+    width: 480px;
+    height: 50%;
+    color: #eb3238;
+  }
+  .listaopciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: left;
+    padding: 0% 5% 5% 35%;
+  }
+  .listaopciones a {
+    color: #eb3238;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
 .derechos {
   display: flex;
   justify-content: center;
