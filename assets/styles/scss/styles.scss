@@ -344,38 +344,23 @@ body {
   }
   
   /*--------------------------------------- PÁGINA EMPRESA -------------------------------------*/
-  /* --- SOBRE NOSOTROS ---*/
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  .image-containerEmpresa {
+    top: 0;
+    left: 0;
     width: auto;
-    margin: 0;
-    background-color: #bf4953;
+    height: 100%;
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(black, transparent);
   }
   
-  .image-video {
-    width: 25%;
-    margin: 100px;
-    padding-left: 10px;
+  .image-containerEmpresa img {
+    width: 100%;
+    height: 800px;
   }
   
-  .nosotros {
-    width: 50%;
-    margin: 10px;
-    text-align: justify;
-    font-family: "Dosis";
-    font-size: 20px;
-    background-color: #bf4953;
-    padding: 10px;
-    color: white;
-  }
-  .nosotros ul li {
-    list-style-type: disc;
-    color: white;
-  }
-  
-  /* --- SECCiÓN SOBRE NOSOTROS --- */
+  /* -------------------------------- SECCiÓN SOBRE NOSOTROS ----------------------------------- */
   /*--- imagen sobre nosotros ---*/
   .image-empresa {
     position: sticky;
@@ -388,12 +373,120 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
-  
   .image-empresa img {
     width: 100%;
     height: auto;
-    margin-bottom: 0;
+    margin-bottom: none;
   }
+  
+  /* ------------------------ SOBRE NOSOTROS -------------------------*/
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #bf4953;
+  }
+  .nosotros {
+    width: 50%;
+    margin: 10px;
+    text-align: justify;
+    font-family: "Dosis";
+    font-size: 20px;
+    background-color: #bf4953;
+    padding: 20px;
+    color: white;
+  }
+  .nosotros ul li {
+    list-style-type: disc;
+    color: white;
+  }
+  .image-video  {
+    width: 35%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .imageFachada:hover {
+    width: 672px;
+    height: 378px;
+    transform: translate(-60px);
+    transition: 3s;
+  }
+   
+   @media screen and (max-width:480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: auto;
+        background-color: #bf4953;
+        }
+        .nosotros {
+            width:auto;
+            font-size: 15px;
+          }
+          .image-video {
+            width: auto;
+            margin-left: 0px;
+          }
+          .imageFachada {
+            width: 403px;
+            height: 226px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          .imageFachada :hover {
+            width: 403px;
+            height: 226px;
+            transform: translate(-5px, 5px);
+            transition: 3s;
+          }
+          .image-video iframe {
+            width: 403px;
+            height: 226px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+
+        @media screen and (min-width:481px) and (max-width:1125px) {
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: auto;
+                background-color: #bf4953;
+                }
+                .nosotros {
+                    width:auto;
+                    font-size: 17px;
+                    padding: 30px;
+                  }
+                .image-video {
+                    width: auto;
+                    margin-left: 0px;
+                  }
+                  .imageFachada {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+                .imageFachada :hover {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    transform: translate(-5px, 5px);
+                    transition: 3s;
+                    transition-timing-function: 4s;
+                  }
+                .image-video iframe {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                  }
+                }    
   
   /* ------------------- SECCIÓN CONTÁCTENOS ------------------- */
   .contactenos {
