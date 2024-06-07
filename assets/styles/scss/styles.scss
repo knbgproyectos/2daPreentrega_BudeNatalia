@@ -1,6 +1,4 @@
-body {
-    background-color: #f2f2f2;
-  }
+
   @font-face {
     font-family: "Dosis";
     src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
@@ -50,22 +48,6 @@ body {
   
   /* --------------------------------------------- PÁGINA INDEX ------------------------------------------*/
   /*---- imagen pantalla completa ---*/
-  /*.image-container {
-    position: flex;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 100%;
-    background-color: none;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: 150%;
-  }
-  
   
   /* ---- OPCIONES (Papeleria - Talista - Servicios) ----*/
   
@@ -491,7 +473,6 @@ body {
   /* ------------------- SECCIÓN CONTÁCTENOS ------------------- */
   .contactenos {
     width: 100%;
-    height: 700px;
     font-family: "Dosis";
     margin-bottom: 10px;
   }
@@ -517,10 +498,11 @@ body {
   
   @media screen and (max-width:480px) {
     .contactenos {
-        width: 100%;
+        width: 480px;
         height: auto;
         font-family: "Dosis";  
         padding-top: 5%;
+        margin: 5px;
       }    
       .contactenos h1 {
         font-size: 35px;
@@ -539,8 +521,12 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 480px;
+        width: auto;
         height:auto;
+      }
+      .ubicationGoogle {
+        width: 480px;
+        margin: 0;
       }
   }
   /* ------------------ FORMULARIO DE CONTACTO --------------------*/
@@ -594,17 +580,45 @@ body {
   
   @media screen and (max-width:480px) {
     .formBox {
-        width: 100%;
+        width: 440px;
         height: 130%;
         border-radius: 40px;
-        padding: 4%;
+        padding: 20px;
         background-color: #bf4953;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         font-family: "Dosis";  
         font-size: 14px;
         color: #ffffff;
+      }
+      #userName {
+        width: 430px;
+        height: 20px;
+        font-family: "Dosis";
+      }
+      #userTelephone {
+        width: 430px;
+        height: 20px;
+        font-family: "Dosis";
+      }
+      #userEmail {
+        width: 430px;
+        height: 20px;
+        font-family: "Dosis";
+      }
+      #userOption {
+        width: 440px;
+        height: 26px;
+        font-family: "Dosis";
+      }
+      #fileuserDescription {
+        width: 430px;
+        height: 200px;
+        margin-top: 1%;
+        margin-bottom: 4%;
+        display: block;
+        font-family: "Dosis";
       }
       .botonesBox {
         display: flex;
@@ -647,10 +661,10 @@ body {
   
   @media screen and (max-width:480px) {
     .infoBox {
-        width: 100%;
+        width: 440px;
         height: 556px;
         border-radius: 40px;
-        padding: 2%;
+        padding: 20px;
         background-color: #bf4953;
         display: flex;
         flex-direction: row;
