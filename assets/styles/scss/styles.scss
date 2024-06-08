@@ -1,5 +1,10 @@
-
-  @font-face {
+@media (max-width: 480px) {
+    .body {
+        width: 480px;
+    }
+ }
+  
+ @font-face {
     font-family: "Dosis";
     src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
   }
@@ -46,6 +51,11 @@
     justify-content: space-around;
   }
   
+  @media (max-width: 480px) {
+    .container-fluid {
+        width: 520px;
+        }
+    }
   /* --------------------------------------------- PÁGINA INDEX ------------------------------------------*/
   /*---- imagen pantalla completa ---*/
   
@@ -521,11 +531,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: auto;
+        width: 490px;
         height:auto;
       }
       .ubicationGoogle {
-        width: 480px;
+        width: 520px;
         margin: 0;
       }
   }
@@ -1194,7 +1204,7 @@
     background-size: 100%;
     background-repeat: no-repeat, repeat;
     width: 100%;
-    height: auto;
+    height: 750px;
   }
   .titleContact {
     width: 100%;
@@ -1217,3 +1227,15 @@
     color: #ffffff;
   }
   
+  @media screen and (max-width:480px) {
+    .imageContact {
+      background-size: 100% 100%;
+        width: 520px;
+        height: 500px;
+      }
+      .titleContact {
+        width: 100%;
+        height: auto;
+      }
+      
+  }
