@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @media (max-width: 480px) {
   .body {
-    width: 480px;
+    width: auto;
   }
 }
 @font-face {
@@ -65,7 +65,7 @@
 @media (max-width: 480px) {
   .image-container {
     position: flex;
-    width: auto;
+    width: 480px;
     height: 100%;
     background-color: none;
     background-position: center;
@@ -92,11 +92,11 @@
     background-color: #bf4953;
     padding-top: 35px;
   }
-  .Opciones {
+  .opciones {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 480px;
     height: 50%;
   }
   .opcion1,
@@ -106,9 +106,10 @@
     flex-direction: column;
     justify-content: center;
     background-color: #bf4953;
-    width: 100%;
+    width: 95%;
     height: 80%;
     padding: 5%;
+    margin: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -1171,7 +1172,6 @@ main {
     font-family: "Dosis";
   }
   #userOption {
-    width: 448px;
     height: 26px;
     font-family: "Dosis";
   }
