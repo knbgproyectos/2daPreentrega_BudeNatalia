@@ -935,12 +935,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-content: center;
-  width: 100%;
-  height: 100%;
   background-color: transparent;
-}
-
-.imageService {
   background-image: url(/assets/imagenes/Servicios.png);
   background-size: 100%;
   background-repeat: no-repeat, repeat;
@@ -993,12 +988,9 @@ main {
 /* --- SECCIÓN SERVICIOS CON GRILLAS ---*/
 .grid-container {
   display: grid;
-  width: 100%;
-  height: 100%;
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  background-color: none;
   grid-template-columns: 35% auto;
   grid-template-rows: 24% 24% 24% 24%;
   column-gap: 15px;
@@ -1007,12 +999,6 @@ main {
   align-content: space-evenly;
   justify-items: stretch;
   align-items: stretch;
-  background-image: url(/assets/imagenes/Servicios.png);
-  background-size: 100%;
-  background-repeat: no-repeat, repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
 }
 
 .image1,
@@ -1056,6 +1042,70 @@ main {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 480px) {
+  .servicesBox {
+    width: 480px;
+    background-image: url(/assets/imagenes/Servicios.png);
+    background-size: 480px 100%;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+  }
+  .imageService {
+    width: 480px;
+    height: 300px;
+  }
+  .titleServicio {
+    width: 480px;
+    height: auto;
+  }
+  .titleServicio p {
+    font-size: 30px;
+  }
+  .subTitleService {
+    width: 100%;
+    height: auto;
+  }
+  .subTitleService h2 {
+    width: 460px;
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+    margin: 0%;
+  }
+  .grid-container {
+    width: 480px;
+    height: auto;
+    grid-template-columns: 80%;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 1px;
+    row-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5px;
+  }
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: auto;
+    height: auto;
+  }
+  .text1 h3,
+  .text2 h3,
+  .text3 h3,
+  .text4 h3,
+  .text1,
+  .text2,
+  .text3,
+  .text4 {
+    height: auto;
+  }
+  .text1 li,
+  .text2 li,
+  .text3 li,
+  .text4 li {
+    font-size: 15px;
+  }
+}
 /* ----------------------------------------------------------- PÁGINA CONTACTO ------------------------------------------------------------------*/
 .imageContact {
   background-image: url(/assets/imagenes/Contactenos.png);
