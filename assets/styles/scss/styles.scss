@@ -50,12 +50,7 @@
   #navbarColor01 {
     justify-content: space-around;
   }
-  
-  @media (max-width: 480px) {
-    .container-fluid {
-        width: 480px;
-        }
-    }
+
   /* --------------------------------------------- PÁGINA INDEX ------------------------------------------*/
   /*---- imagen pantalla completa ---*/
   
@@ -479,224 +474,6 @@
                     margin-bottom: 10px;
                   }
                 }    
-  
-  /* ------------------- SECCIÓN CONTÁCTENOS ------------------- */
-  .contactenos {
-    width: 100%;
-    font-family: "Dosis";
-    margin-bottom: 10px;
-  }
-    .contactenos h1 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #bf4953;
-    text-align: center;
-  }
-    .contactenos p {
-      font-family: "Dosis";  
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-  }
-    .contactBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 600px;
-  }
-  
-  @media screen and (max-width:480px) {
-    .contactenos {
-        width: 480px;
-        height: auto;
-        font-family: "Dosis";  
-        padding-top: 5%;
-        margin: 5px;
-      }    
-      .contactenos h1 {
-        font-size: 35px;
-        font-weight: bold;
-        color: #bf4953;
-        text-align: center;
-      }    
-      .contactenos p {
-        font-family: "Dosis";  
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        padding: 25px;
-      }
-      .contactBox {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 480px;
-        height:auto;
-      }
-      .ubicationGoogle {
-        width: 520px;
-        margin: 0;
-      }
-  }
-  /* ------------------ FORMULARIO DE CONTACTO --------------------*/
-  .formBox {
-    width: 45%;
-    border-radius: 40px;
-    padding: 2%;
-    margin: 1%;
-    background-color: #bf4953;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: "Dosis";  
-    font-size: 16px;
-    color: #ffffff;
-  }
-  #userName {
-    width: 100%;
-    height: 20px;
-    font-family: "Dosis";
-  }
-  #userTelephone {
-    width: 100%;
-    height: 20px;
-    font-family: "Dosis";
-  }
-  #userEmail {
-    width: 100%;
-    height: 20px;
-    font-family: "Dosis";
-  }
-  #userOption {
-    width: 100%;
-    height: 26px;
-    font-family: "Dosis";
-  }
-  #fileuserDescription {
-    width: 100%;
-    height: 200px;
-    margin-top: 1%;
-    margin-bottom: 4%;
-    display: block;
-    font-family: "Dosis";
-  }
-  .botonesBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: "Dosis";
-  }
-  
-  @media screen and (max-width:480px) {
-    .formBox {
-        width: 440px;
-        height: 130%;
-        border-radius: 40px;
-        padding: 15px;
-        background-color: #bf4953;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: "Dosis";  
-        font-size: 14px;
-        color: #ffffff;
-      }
-      #userName {
-        width: 430px;
-        height: 20px;
-        font-family: "Dosis";
-      }
-      #userTelephone {
-        width: 430px;
-        height: 20px;
-        font-family: "Dosis";
-      }
-      #userEmail {
-        width: 430px;
-        height: 20px;
-        font-family: "Dosis";
-      }
-      #userOption {
-        width: 440px;
-        height: 26px;
-        font-family: "Dosis";
-      }
-      #fileuserDescription {
-        width: 430px;
-        height: 200px;
-        margin-top: 1%;
-        margin-bottom: 4%;
-        display: block;
-        font-family: "Dosis";
-      }
-      .botonesBox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        font-family: "Dosis";
-      }
-  }
-  
-  /* ----------------- INFORMACIÓN DE CONTACTO ---------------------*/
-  .infoBox {
-    width: 45%;
-    border-radius: 40px;
-    padding: 1%;
-    margin: 1%;
-    background-color: #bf4953;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: start;
-    color: #ffffff;
-  }
-  .iconoslist {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0%;
-    align-items: center;
-  }
-  .infoList p {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: left;
-    padding-top: 23%;
-    font-family: "Dosis";
-    font-size: 20px;
-    font-weight: lighter;
-  }
-  
-  @media screen and (max-width:480px) {
-    .infoBox {
-        width: 440px;
-        height: 556px;
-        border-radius: 40px;
-        padding: 15px;
-        background-color: #bf4953;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        color: #ffffff;
-      }
-      .iconoslist {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-      .infoList p {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: left;
-        font-family: "Dosis";
-        font-size: 20px;
-        padding-top: 15%;
-      }
-  }
   
   /* ------------------- FOOTER ----------------------*/
   .piedepagina {
@@ -1229,13 +1006,226 @@
   
   @media screen and (max-width:480px) {
     .imageContact {
-      background-size: 100% 100%;
+        background-image: url(/assets/imagenes/Contactenos.png);
         width: 480px;
-        height: 500px;
+        height: 300px;
       }
       .titleContact {
+        font-size: 25px;
         width: 100%;
         height: auto;
       }
-      
+  }
+  /* ------------------- SECCIÓN CONTÁCTENOS aparece en Index-Empresa y Contactenos------------------- */
+  .contactenos {
+    width: 100%;
+    font-family: "Dosis";
+    margin-bottom: 10px;
+  }
+    .contactenos h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #bf4953;
+    text-align: center;
+  }
+    .contactenos p {
+      font-family: "Dosis";  
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+    .contactBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 600px;
+  }
+  
+  @media screen and (max-width:480px) {
+    .contactenos {
+        width: 480px;
+        height: auto;
+        font-family: "Dosis";  
+        padding-top: 5%;
+        margin: 5px;
+      }    
+      .contactenos h1 {
+        font-size: 35px;
+        font-weight: bold;
+        color: #bf4953;
+        text-align: center;
+      }    
+      .contactenos p {
+        font-family: "Dosis";  
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 25px;
+      }
+      .contactBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 480px;
+        height:auto;
+      }
+      .ubicationGoogle {
+        width: 520px;
+        margin: 0;
+      }
+  }
+  /* ------------------ FORMULARIO DE CONTACTO --------------------*/
+  .formBox {
+    width: 45%;
+    border-radius: 40px;
+    padding: 2%;
+    margin: 1%;
+    background-color: #bf4953;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Dosis";  
+    font-size: 16px;
+    color: #ffffff;
+  }
+  #userName {
+    width: 100%;
+    height: 20px;
+    font-family: "Dosis";
+  }
+  #userTelephone {
+    width: 100%;
+    height: 20px;
+    font-family: "Dosis";
+  }
+  #userEmail {
+    width: 100%;
+    height: 20px;
+    font-family: "Dosis";
+  }
+  #userOption {
+    width: 100%;
+    height: 26px;
+    font-family: "Dosis";
+  }
+  #fileuserDescription {
+    width: 100%;
+    height: 200px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    display: block;
+    font-family: "Dosis";
+  }
+  .botonesBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: "Dosis";
+  }
+  
+  @media screen and (max-width:480px) {
+    .formBox {
+        width: 440px;
+        height: 130%;
+        border-radius: 40px;
+        padding: 17px;
+        background-color: #bf4953;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Dosis";  
+        font-size: 14px;
+        color: #ffffff;
+      }
+      #userName {
+        height: 20px;
+        font-family: "Dosis";
+      }
+      #userTelephone {
+        height: 20px;
+        font-family: "Dosis";
+      }
+      #userEmail {
+        height: 20px;
+        font-family: "Dosis";
+      }
+      #userOption {
+        width: 448px;
+        height: 26px;
+        font-family: "Dosis";
+      }
+      #fileuserDescription {
+        height: 200px;
+        margin-top: 1%;
+        margin-bottom: 4%;
+        display: block;
+        font-family: "Dosis";
+      }
+      .botonesBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: "Dosis";
+      }
+  }
+  
+  /* ----------------- INFORMACIÓN DE CONTACTO ---------------------*/
+  .infoBox {
+    width: 45%;
+    border-radius: 40px;
+    padding: 1%;
+    margin: 1%;
+    background-color: #bf4953;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: start;
+    color: #ffffff;
+  }
+  .iconoslist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0%;
+    align-items: center;
+  }
+  .infoList p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-top: 23%;
+    font-family: "Dosis";
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  @media screen and (max-width:480px) {
+    .infoBox {
+        width: 440px;
+        height: 556px;
+        border-radius: 40px;
+        padding: 15px;
+        background-color: #bf4953;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: #ffffff;
+      }
+      .iconoslist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .infoList p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        font-family: "Dosis";
+        font-size: 20px;
+        padding-top: 15%;
+      }
   }
