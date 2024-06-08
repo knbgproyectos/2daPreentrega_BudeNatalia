@@ -59,9 +59,7 @@
   justify-content: space-around;
 }
 
-/* --------------------------------------------- PÁGINA INDEX ------------------------------------------*/
-/*---- imagen pantalla completa ---*/
-/* ---- OPCIONES (Papeleria - Talista - Servicios) ----*/
+/* ----------------------------------- PÁGINA INDEX --------------------------------------*/
 @media (max-width: 480px) {
   .image-container {
     position: flex;
