@@ -53,7 +53,7 @@
   
   @media (max-width: 480px) {
     .container-fluid {
-        width: 520px;
+        width: 480px;
         }
     }
   /* --------------------------------------------- PÁGINA INDEX ------------------------------------------*/
@@ -531,7 +531,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 490px;
+        width: 480px;
         height:auto;
       }
       .ubicationGoogle {
@@ -593,7 +593,7 @@
         width: 440px;
         height: 130%;
         border-radius: 40px;
-        padding: 20px;
+        padding: 15px;
         background-color: #bf4953;
         display: flex;
         flex-direction: column;
@@ -674,7 +674,7 @@
         width: 440px;
         height: 556px;
         border-radius: 40px;
-        padding: 20px;
+        padding: 15px;
         background-color: #bf4953;
         display: flex;
         flex-direction: row;
@@ -1230,7 +1230,7 @@
   @media screen and (max-width:480px) {
     .imageContact {
       background-size: 100% 100%;
-        width: 520px;
+        width: 480px;
         height: 500px;
       }
       .titleContact {
