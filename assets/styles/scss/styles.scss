@@ -50,11 +50,8 @@
   #navbarColor01 {
     justify-content: space-around;
   }
-
-  /* --------------------------------------------- PÁGINA INDEX ------------------------------------------*/
-  /*---- imagen pantalla completa ---*/
-  
-  /* ---- OPCIONES (Papeleria - Talista - Servicios) ----*/
+ 
+  /* ----------------------------------- PÁGINA INDEX --------------------------------------*/
   
   @media (max-width: 480px) {
     .image-container {
@@ -93,7 +90,6 @@
       width: 480px;
       height: 50%;
     }
-  
     .opcion1,
     .opcion2,
     .opcion3 {
