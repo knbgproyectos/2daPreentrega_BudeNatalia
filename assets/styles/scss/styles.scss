@@ -1085,7 +1085,7 @@
   }
   /* ----------------------------------------------------------- PÁGINA CONTACTO ------------------------------------------------------------------*/
   .imageContact {
-    background: url(/assets/imagenes/Contactenos.png);
+    background: url(./assets/imagenes/Contactenos.png);
     background-size: 100%;
     background-repeat: no-repeat, repeat;
     width: 100%;
@@ -1114,7 +1114,7 @@
   
   @media screen and (max-width:480px) {
     .imageContact {
-        background: url(/assets/imagenes/Contactenos.png);
+        background: url(./assets/imagenes/Contactenos.png);
         width: 480px;
         height: 300px;
       }
