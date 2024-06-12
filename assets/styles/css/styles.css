@@ -1137,7 +1137,7 @@ main {
 
 @media screen and (max-width: 480px) {
   .imageContact {
-    background-image: url(/assets/imagenes/Contactenos.png);
+    background-image: url(./../assets/imagenes/Contactenos.png);
     width: 480px;
     height: 300px;
   }
