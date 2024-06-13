@@ -696,7 +696,7 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    background-image: url(/assets/imagenes/talista.png);
+    background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/talista.png);
     background-size: 100%;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
@@ -711,7 +711,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
-    padding-top: 15%;
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
   
   .titleTalista p {
@@ -786,7 +787,7 @@
     align-content: space-evenly;
     justify-items: stretch;
     align-items: stretch;
-    background-image: url(./../imagenes/talista.png);
+    background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/talista.png);
     background-size: 100%;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
@@ -839,7 +840,7 @@
   @media screen and (max-width:480px) {
     .talistaBox {
         width: 480px;
-        background-image: url(/assets/imagenes/talista.png);
+        background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/talista.png);
         background-size: 480px 100%;
         background-repeat: no-repeat, repeat;
         background-attachment: fixed;
@@ -849,7 +850,8 @@
     }
     .titleTalista {
         width: 480px;
-        height: auto;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
     .titleTalista p {
         align-items: center;
