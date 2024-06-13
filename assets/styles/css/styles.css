@@ -1056,7 +1056,7 @@ main {
 
 /* ----------------------------------------------------------- PÁGINA CONTACTO ------------------------------------------------------------------*/
 .imageContact {
-  background: url(2daPreentrega_BudeNatalia/assets/imagenes/Contactenos.png);
+  background: url(/2daPreentrega_BudeNatalia/assets/imagenes/Contactenos.png);
   background-size: 100%;
   background-repeat: no-repeat, repeat;
   width: 100%;
@@ -1087,7 +1087,7 @@ main {
 
 @media screen and (max-width: 480px) {
   .imageContact {
-    background: url(2daPreentrega_BudeNatalia/assets/imagenes/Contactenos.png);
+    background: url(/2daPreentrega_BudeNatalia/assets/imagenes/Contactenos.png);
     width: 480px;
     height: 300px;
   }
