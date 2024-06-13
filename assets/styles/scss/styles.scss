@@ -706,11 +706,9 @@
  
   .titleTalista {
     width: 100%;
-    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
     padding-top: 20%;
     padding-bottom: 20%;
   }
@@ -731,6 +729,8 @@
     width: 100%;
     height: 30%;
     background-color: #bf4953;
+    padding-top: 20px;
+    padding-bottom: 15px;
   }
   .subTitleTalista h2 {
     width: 100%;
@@ -850,8 +850,8 @@
     }
     .titleTalista {
         width: 480px;
-        padding-top: 20%;
-        padding-bottom: 20%;
+        padding-top: 25%;
+        padding-bottom: 25%;
     }
     .titleTalista p {
         align-items: center;
