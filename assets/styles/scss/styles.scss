@@ -131,8 +131,10 @@
   .listacontacto a {
     padding: 5%;
     color: #eb3238;
-    font-size: 20px;
+    font-family: "Dosis";
+    font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
   }
   .pieBox4 {
     width: 25%;
@@ -150,8 +152,10 @@
   .listaopciones a {
     padding: 5%;
     color: #eb3238;
-    font-size: 20px;
+    font-family: "Dosis";
+    font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
   }
 
   @media screen and (max-width:480px) {
@@ -226,7 +230,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-content: left;
-        padding: 5% 5% 0% 35%;
+        padding: 1%;
       }
       .listacontacto a {
         color: #eb3238;
@@ -243,7 +247,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-content: left;
-        padding: 0% 5% 5% 35%;
+        padding: 1%;
       }
       .listaopciones a {
         color: #eb3238;
@@ -392,7 +396,7 @@
         justify-content: space-around;
         align-items: center;
         background-color: #bf4953;
-        width: 515px;
+        width: 600px;
         height: 80%;
         padding: 5%;
         margin: 5px;
