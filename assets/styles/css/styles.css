@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Dosis";
+  src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
+}
+@font-face {
+  font-family: "Dosis";
+  src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
+}
 /* ----------------- MENÚ con Boostrap -----------------*/
 .container-fluid {
   width: 100%;
@@ -44,6 +52,10 @@
   justify-content: space-around;
 }
 
+@font-face {
+  font-family: "Dosis";
+  src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
+}
 /* ------------------- FOOTER ----------------------*/
 .piedepagina {
   width: auto;
@@ -51,37 +63,34 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: #ffffff;
+  background-color: #bf4953;
 }
-
-.pieBox1 {
+.piedepagina .pieBox1 {
   width: 25%;
   height: 100%;
-  color: #eb3238;
+  color: #ffffff;
 }
-
-.linkInicio {
+.piedepagina .linkInicio {
   display: flex;
   justify-content: center;
   align-content: center;
 }
-.linkInicio img {
+.piedepagina .linkInicio img {
   width: 230px;
   height: 50px;
   margin-top: 5px;
   color: #eb3238;
 }
-
-.columnaBox1 {
+.piedepagina .columnaBox1 {
   width: auto;
   height: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
+  padding-top: 20px;
 }
-
-.iconosBox1 {
+.piedepagina .iconosBox1 {
   width: 10%;
   height: 80%;
   display: inline-flex;
@@ -90,11 +99,10 @@
   align-items: center;
   background-color: none;
 }
-
-.infoBox1 p {
+.piedepagina .infoBox1 p {
   width: 100%;
   height: auto;
-  padding-top: 12px;
+  padding-top: 11px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -103,56 +111,51 @@
   font-weight: bold;
   background-color: none;
 }
-
-.pieBox2 {
+.piedepagina .pieBox2 {
   width: 25%;
   height: 100%;
 }
-.pieBox2 .redesSociales {
+.piedepagina .pieBox2 .redesSociales {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  align-content: center;
   padding-top: 110px;
 }
-
-.pieBox3 {
+.piedepagina .pieBox3 {
   width: 25%;
   height: 100%;
-  color: #eb3238;
   padding: 5px;
 }
-.pieBox3 .listacontacto {
+.piedepagina .pieBox3 .listacontacto {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-content: left;
-  padding: 10% 10% 10% 35%;
+  padding: 26% 10% 10% 35%;
 }
-.pieBox3 .listacontacto a {
+.piedepagina .pieBox3 .listacontacto a {
   padding: 5%;
-  color: #eb3238;
+  color: #ffffff;
   font-family: "Dosis";
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
 }
-
-.pieBox4 {
+.piedepagina .pieBox4 {
   width: 25%;
   height: 100%;
-  color: #eb3238;
   padding: 5px;
 }
-.pieBox4 .listaopciones {
+.piedepagina .pieBox4 .listaopciones {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-content: left;
-  padding: 10% 10% 10% 35%;
+  padding: 26% 10% 10% 35%;
 }
-.pieBox4 .listaopciones a {
+.piedepagina .pieBox4 .listaopciones a {
   padding: 5%;
-  color: #eb3238;
+  color: #ffffff;
   font-family: "Dosis";
   font-size: 15px;
   font-weight: bold;
@@ -310,9 +313,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 480px;
     height: 50%;
-    justify-content: space-between;
     padding-top: 5px;
   }
   .opciones a :hover {
@@ -336,7 +339,7 @@
   a,
   h1 {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 25px;
     font-family: "Dosis";
     font-weight: bold;
@@ -379,8 +382,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 50%;
     justify-content: space-between;
+    height: 50%;
     padding-top: 5px;
   }
   .opciones a :hover {
@@ -407,7 +410,7 @@
   .opcion3 a,
   .opcion3 h1 {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 25px;
     font-family: "Dosis";
     font-weight: bold;
@@ -438,7 +441,7 @@
   .titleOpciones h2 {
     width: 100%;
     color: #ffffff;
-    font-family: "Dosis";
+    font-family: #bf4953;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -475,7 +478,7 @@
   .opcion2 a,
   .opcion3 a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-family: "Dosis";
     font-size: 25px;
     font-weight: bold;
@@ -486,7 +489,7 @@
   .opcion2 h1,
   .opcion3 h1 {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-family: "Dosis";
     font-size: 25px;
     font-weight: bold;
@@ -553,7 +556,7 @@
   .opcion2 a,
   .opcion3 a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     align-items: center;
     border-radius: 40px;
   }
@@ -570,7 +573,7 @@
   }
 }
 /*--------------------------------------- PÁGINA EMPRESA -------------------------------------*/
-.image-containerEmpresa {
+.image-container {
   top: 0;
   left: 0;
   width: auto;
@@ -578,12 +581,10 @@
   background-color: none;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(black, transparent);
 }
-
-.image-containerEmpresa img {
+.image-container img {
   width: 100%;
-  height: 800px;
+  height: 600px;
 }
 
 /* -------------------------------- SECCiÓN SOBRE NOSOTROS ----------------------------------- */
@@ -599,7 +600,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .image-empresa img {
   width: 100%;
   height: auto;
@@ -625,12 +625,12 @@ main {
   font-size: 20px;
   background-color: #bf4953;
   padding: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 .nosotros ul li {
   list-style-type: disc;
-  color: white;
+  color: #ffffff;
 }
 
 .image-video {
@@ -642,11 +642,11 @@ main {
   align-items: center;
 }
 
+.imageFachada {
+  transition: transform 3s linear;
+}
 .imageFachada:hover {
-  width: 672px;
-  height: 378px;
-  transform: translate(-60px);
-  transition: 3s;
+  transform: scale(1.4);
 }
 
 @media screen and (max-width: 480px) {
@@ -670,12 +670,10 @@ main {
     height: 226px;
     padding-top: 10px;
     padding-bottom: 10px;
+    transition: transform 3s linear;
   }
-  .imageFachada :hover {
-    width: 403px;
-    height: 226px;
-    transform: translate(-5px, 5px);
-    transition: 3s;
+  .imageFachada:hover {
+    transform: scale(1.4);
   }
   .image-video iframe {
     width: 403px;
@@ -704,13 +702,10 @@ main {
   .imageFachada {
     padding-top: 10px;
     padding-bottom: 10px;
+    transition: transform 3s linear;
   }
-  .imageFachada :hover {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transform: translate(-5px, 5px);
-    transition: 3s;
-    transition-timing-function: 4s;
+  .imageFachada:hover {
+    transform: scale(1.4);
   }
   .image-video iframe {
     margin-top: 10px;
@@ -742,7 +737,6 @@ main {
   padding-top: 20%;
   padding-bottom: 20%;
 }
-
 .titleTalista p {
   width: auto;
   height: 5%;
@@ -763,7 +757,6 @@ main {
   padding-top: 20px;
   padding-bottom: 15px;
 }
-
 .subTitleTalista h2 {
   width: 100%;
   height: 20%;
@@ -784,7 +777,6 @@ main {
   margin: 20px 50px 20px 50px;
   padding: 40px 40px 20px 40px;
 }
-
 .textTalista p {
   color: #ffffff;
   font-family: "Dosis";
@@ -792,17 +784,19 @@ main {
   text-align: justify;
 }
 
-.textTalista a {
+a {
   color: #ffffff;
   font-family: "Dosis";
   font-size: 20px;
-  text-align: justify;
+  font-weight: bold;
+  text-decoration: none;
+}
+a :hover {
+  background-color: #f2949c;
 }
 
 .grid-containerTalista {
   display: grid;
-  width: 100%;
-  height: 100%;
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -840,30 +834,27 @@ main {
 .retirar {
   background-color: #bf4953;
   color: #ffffff;
-  padding: 10px;
+  padding: 35px;
   border-radius: 10px;
 }
-
 .lista h3,
 .cotizar h3,
 .confirmar h3,
 .retirar h3 {
-  font-size: 1.8em;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   font-family: "Dosis";
+  padding-bottom: 10px;
 }
-
 .lista p,
 .cotizar p,
 .confirmar p,
 .retirar p {
   font-family: "Dosis";
-  font-size: 1.2em;
-  font-weight: bold;
-  padding-top: 15px;
+  font-size: 16px;
   letter-spacing: 1px;
-  margin-left: 30px;
+  padding: 8px;
 }
 
 @media screen and (max-width: 480px) {
@@ -930,12 +921,14 @@ main {
   .confirmar,
   .retirar {
     height: auto;
+    padding: 25px;
   }
   .lista p,
   .cotizar p,
   .confirmar p,
   .retirar p {
     font-size: 15px;
+    text-align: justify;
   }
 }
 /* ------------------------------------------------------- PÁGINA SERVICIO -------------------------------------------------------------------*/
@@ -962,7 +955,6 @@ main {
   padding-top: 20%;
   padding-bottom: 20%;
 }
-
 .titleServicio p {
   width: auto;
   height: 5%;
@@ -981,7 +973,6 @@ main {
   height: 30%;
   background-color: #bf4953;
 }
-
 .subTitleService h2 {
   width: 100%;
   height: 20%;
@@ -1029,7 +1020,6 @@ main {
   padding: 10px;
   border-radius: 10px;
 }
-
 .text1 h3,
 .text2 h3,
 .text3 h3,
@@ -1039,14 +1029,12 @@ main {
   text-align: center;
   font-family: "Dosis";
 }
-
 .text1 li,
 .text2 li,
 .text3 li,
 .text4 li {
   font-family: "Dosis";
   font-size: 1.2em;
-  font-weight: bold;
   padding-top: 15px;
   letter-spacing: 1px;
 }
@@ -1101,11 +1089,7 @@ main {
   .text1 h3,
   .text2 h3,
   .text3 h3,
-  .text4 h3,
-  .text1,
-  .text2,
-  .text3,
-  .text4 {
+  .text4 h3 {
     height: auto;
   }
   .text1 li,
@@ -1131,7 +1115,6 @@ main {
   justify-content: space-evenly;
   padding-top: 20%;
 }
-
 .titleContact p {
   width: auto;
   height: 5%;
@@ -1165,14 +1148,12 @@ main {
   font-family: "Dosis";
   margin-bottom: 10px;
 }
-
 .contactenos h1 {
   font-size: 40px;
   font-weight: bold;
   color: #bf4953;
   text-align: center;
 }
-
 .contactenos p {
   font-family: "Dosis";
   font-size: 20px;
@@ -1237,18 +1218,8 @@ main {
   color: #ffffff;
 }
 
-#userName {
-  width: 100%;
-  height: 20px;
-  font-family: "Dosis";
-}
-
-#userTelephone {
-  width: 100%;
-  height: 20px;
-  font-family: "Dosis";
-}
-
+#userName,
+#userTelephone,
 #userEmail {
   width: 100%;
   height: 20px;
@@ -1291,14 +1262,8 @@ main {
     font-size: 14px;
     color: #ffffff;
   }
-  #userName {
-    height: 20px;
-    font-family: "Dosis";
-  }
-  #userTelephone {
-    height: 20px;
-    font-family: "Dosis";
-  }
+  #userName,
+  #userTelephone,
   #userEmail {
     height: 20px;
     font-family: "Dosis";
@@ -1348,10 +1313,10 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: left;
-  padding-top: 23%;
+  padding-top: 21%;
   font-family: "Dosis";
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 480px) {
@@ -1378,8 +1343,8 @@ main {
     justify-content: space-around;
     text-align: left;
     font-family: "Dosis";
-    font-size: 20px;
-    padding-top: 15%;
+    font-size: 18px;
+    padding-top: 17%;
   }
 }
 
