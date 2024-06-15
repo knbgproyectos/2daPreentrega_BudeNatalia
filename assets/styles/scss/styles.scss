@@ -1,56 +1,14 @@
-@media (max-width: 480px) {
+@import "variables";
+@import "nav";
+@import "footer";
+
+@media (max-width: 480px) and (min-width: 600px) {
     .body {
         width: auto;
     }
  }
   
- @font-face {
-    font-family: "Dosis";
-    src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
-  }
   
-  /* ----------------- MENÚ con Boostrap -----------------*/
-  .container-fluid {
-    width: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
-    background-color: #bf4953;
-  }
-  .navbar {
-    background-color: #bf4953;
-  }
-  .navbar-nav {
-    margin-left: 2%;
-  }
-  .me-auto {
-    margin-right: 2% !important;
-  }
-  .nav-link {
-    color: #ffffff;
-  }
-  .logo1 {
-    width: 250px;
-    height: 40px;
-    margin-left: 3%;
-  }
-  .logo2 {
-    width: 50px;
-    height: 40px;
-    border-radius: 10%;
-  }
-  .logo3 {
-    width: 50px;
-    height: 40px;
-    border-radius: 10%;
-  }
-  .iconos {
-    display: flex;
-    margin-left: 4%;
-  }
-  #navbarColor01 {
-    justify-content: space-around;
-  }
- 
   /* ----------------------------------- PÁGINA INDEX --------------------------------------*/
   
   @media (max-width: 480px) {
@@ -61,27 +19,28 @@
       background-color: none;
       background-position: center;
       background-repeat: no-repeat;
-    }
-    .image-container img {
-      width: 100%;
-      height: 150%;
+     
+      img {
+        width: 100%;
+        height: 150%;
+      }
     }
     .titleOpciones {
       display: block;
       width: 100%;
       height: 120px;
       background-color: #bf4953;
-    }
-    .titleOpciones h2 {
-      width: 100%;
-      color: #ffffff;
-      font-family: "Dosis";
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      background-color: #bf4953;
-      padding-top: 35px;
+      h2 {
+        width: 100%;
+        color: #ffffff;
+        font-family: "Dosis";
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        background-color: #bf4953;
+        padding-top: 35px;
+      }
     }
     .opciones {
       display: flex;
@@ -89,38 +48,114 @@
       flex-wrap: wrap;
       width: 480px;
       height: 50%;
+      justify-content: space-between;
+      padding-top: 5px;
+      a {
+        & :hover {
+            background-color: #f2949c;
+        }
+      }
     }
     .opcion1,
     .opcion2,
     .opcion3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #bf4953;
+            width: 100%;
+            height: 80%;
+            padding: 5%;
+            margin: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+      a,
+      h1 {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: "Dosis";
+        font-weight: bold;
+        align-items: center;
+        border-radius: 10px;
+        text-align: center;
+      }
+    }
+  
+  @media (min-width: 481px) and (max-width: 600px) {
+    .image-container {
+        position: flex;
+        width: auto;
+        height: 100%;
+        background-color: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    .titleOpciones {
+      display: block;
+      width: 100%;
+      height: 110px;
       background-color: #bf4953;
-      width: 95%;
-      height: 80%;
-      padding: 5%;
-      margin: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      border-radius: 10px;
-    }
-    .opcion1,
-    .opcion2,
-    .opcion3,
-    a,
-    h1 {
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-      font-family: "Dosis";
-      font-weight: bold;
-      align-items: center;
-      border-radius: 10px;
-    }
+      h2 {
+        width: 100%;
+        color: #ffffff;
+        font-family: "Dosis";
+        text-align: center;
+        font-size: 27px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        background-color: #bf4953;
+        padding-top: 35px;
+      }
+    }   
+    .opciones {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 50%;
+        justify-content: space-between;
+        padding-top: 5px;
+        a {
+            & :hover {
+                background-color: #f2949c;
+            }
+        }
+      }
+      .opcion1,
+      .opcion2,
+      .opcion3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #bf4953;
+        width: 600px;
+        height: 80%;
+        padding: 5%;
+        margin: 5px;
+       
+        border-radius: 10px;
+        a,
+        h1 {
+          text-decoration: none;
+          color: white;
+          font-size: 25px;
+          font-family: "Dosis";
+          font-weight: bold;
+          align-items: center;
+          border-radius: 10px;
+          text-align: center;
+        }
+      }
   }
   
-  @media (min-width: 481px) and (max-width: 768px) {
+  @media (min-width: 601px) and (max-width: 1279px) {
     .image-container {
       position: flex;
       width: auto;
@@ -128,27 +163,28 @@
       background-color: none;
       background-position: center;
       background-repeat: no-repeat;
-    }
-    .image-container img {
-      width: 100%;
-      height: 150%;
+
+      img {
+        width: 100%;
+        height: 150%;
+      }
     }
     .titleOpciones {
       display: block;
       width: 100%;
       height: 120px;
       background-color: #bf4953;
-    }
-    .titleOpciones h2 {
-      width: 100%;
-      color: #ffffff;
-      font-family: "Dosis";
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      background-color: #bf4953;
-      padding-top: 35px;
+      h2 {
+        width: 100%;
+        color: #ffffff;
+        font-family: "Dosis";
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        background-color: #bf4953;
+        padding-top: 35px;
+      }
     }
     .opciones {
       display: flex;
@@ -159,144 +195,11 @@
       height: 400px;
       margin: 0;
       background-color: none;
+      a {
+        & :hover {
+            background-color: #f2949c;
+        }
     }
-    .opcion1,
-    .opcion2,
-    .opcion3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      background-color: #bf4953;
-      width: 30%;
-      height: 40%;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    .opcion1,
-    .opcion2,
-    .opcion3,
-    a, h1 {
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-      font-family: "Dosis";
-      font-weight: bold;
-      align-items: center;
-      border-radius: 10px;
-    }
-    .opciones a :hover {
-      background-color: #f2949c;
-    }
-  }
-  
-  @media (min-width: 769px) and (max-width: 1279px) {
-    .image-container {
-      position: flex;
-      width: auto;
-      height: 100%;
-      background-color: none;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .image-container img {
-      width: 100%;
-      height: 150%;
-    }
-    .titleOpciones {
-      display: block;
-      width: 100%;
-      height: 120px;
-      background-color: #bf4953;
-    }
-    .titleOpciones h2 {
-      width: 100%;
-      color: #ffffff;
-      font-family: "Dosis";
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      background-color: #bf4953;
-      padding-top: 35px;
-    }
-    .opciones {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      width: auto;
-      height: 400px;
-      margin: 0;
-      background-color: none;
-    }
-    .opcion1,
-    .opcion2,
-    .opcion3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      background-color: #bf4953;
-      width: 30%;
-      height: 50%;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    .opcion1,
-    .opcion2,
-    .opcion3,
-    a, h1 {
-      text-decoration: none;
-      color: white;
-      font-family: "Dosis";
-      font-size: 25px;
-      font-weight: bold;
-      align-items: center;
-      border-radius: 40px;
-    }
-    .opciones a :hover {
-      background-color: #f2949c;
-    }
-  }
-  
-  @media (min-width: 1280px) {
-    .image-container {
-      position: flex;
-      width: auto;
-      height: 100%;
-      background-color: none;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .image-container img {
-      width: 100%;
-      height: 150%;
-    }
-    .titleOpciones {
-      display: block;
-      width: 100%;
-      height: 120px;
-      background-color: #bf4953;
-    }
-    .titleOpciones h2 {
-      width: 100%;
-      color: #ffffff;
-      font-family: "Dosis";
-      text-align: center;
-      font-size: 40px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      background-color: #bf4953;
-      padding-top: 35px;
-    }
-    .opciones {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      width: auto;
-      height: 400px;
-      margin: 0;
-      background-color: none;
     }
     .opcion1,
     .opcion2,
@@ -309,24 +212,103 @@
       height: 50%;
       margin: 10px;
       border-radius: 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: "Dosis";
+        font-size: 25px;
+        font-weight: bold;
+        align-items: center;
+        border-radius: 40px;
+      }
+      h1 {
+        text-decoration: none;
+        color: white;
+        font-family: "Dosis";
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 40px;
+      }
+    }    
+}
+@media (min-width: 1280px) {
+    .image-container {
+      position: flex;
+      width: auto;
+      height: 100%;
+      background-color: none;
+      background-position: center;
+      background-repeat: no-repeat;
+      img {
+        width: 100%;
+        height: 150%;
+      }
+    }
+    .titleOpciones {
+      display: block;
+      width: 100%;
+      height: 120px;
+      background-color: #bf4953;
+      h2 {
+        width: 100%;
+        color: #ffffff;
+        font-family: "Dosis";
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        background-color: #bf4953;
+        padding-top: 35px;
+      }
+    }
+    .opciones {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: auto;
+      height: 400px;
+      margin: 0;
+      background-color: none;
+      a {
+        & :hover {
+            background-color: #f2949c;
+        }
+    }
     }
     .opcion1,
     .opcion2,
-    .opcion3,
-    a, h1 {
-      text-decoration: none;
-      color: white;
-      font-family: "Dosis";
-      font-size: 30px;
-      font-weight: bold;
-      align-items: center;
-      border-radius: 40px;
-    }
-    .opciones a :hover {
-      background-color: #f2949c;
+    .opcion3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #bf4953;
+      width: 30%;
+      height: 50%;
+      margin: 10px;
+      border-radius: 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        border-radius: 40px;
+        h1 {
+            text-decoration: none;
+            color: white;
+            font-family: "Dosis";
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 40px;
+          }
+      }
     }
   }
-  
+
+
   /*--------------------------------------- PÁGINA EMPRESA -------------------------------------*/
   .image-containerEmpresa {
     top: 0;
@@ -472,221 +454,6 @@
                   }
                 }    
   
-  /* ------------------- FOOTER ----------------------*/
-  .piedepagina {
-    width: auto;
-    height: 250px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #ffffff;
-  }
-  .pieBox1 {
-    width: 25%;
-    height: 100%;
-    color: #eb3238;
-  }
-  .linkInicio {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  .linkInicio img {
-    width: 230px;
-    height: 50px;
-    margin-top: 5px;
-    color: #eb3238;
-  }
-  .columnaBox1 {
-    width: auto;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-  }
-  .iconosBox1 {
-    width: 10%;
-    height: 80%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: none;
-  }
-  .infoBox1 p {
-    width: 100%;
-    height: auto;
-    padding-top: 12px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: "Dosis";
-    font-size: 15px;
-    font-weight: bold;
-    background-color: none;
-  }
-  .pieBox2 {
-    width: 25%;
-    height: 100%;
-  }
-  .redesSociales {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    padding-top: 110px;
-  }
-  .pieBox3 {
-    width: 25%;
-    height: 100%;
-    color: #eb3238;
-    padding: 5px;
-  }
-  .listacontacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: left;
-    padding: 10% 10% 10% 35%;
-  }
-  .listacontacto a {
-    padding: 5%;
-    color: #eb3238;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .pieBox4 {
-    width: 25%;
-    height: 100%;
-    color: #eb3238;
-    padding: 5px;
-  }
-  .listaopciones {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: left;
-    padding: 10% 10% 10% 35%;
-  }
-  .listaopciones a {
-    padding: 5%;
-    color: #eb3238;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  @media screen and (max-width:480px) {
-    .piedepagina {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 480px;
-        height:auto;
-        background-color: #ffffff;
-      }
-      .pieBox1 {
-        width: auto;
-        color: #eb3238;
-      }
-      .linkInicio {
-        width: 480px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-      }
-      .linkInicio img {
-        width: 230px;
-        height: 50px;
-        margin-top: 5px;
-        color: #eb3238;
-      }
-      .columnaBox1 {
-        width: 480px;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;       
-      }
-      .iconosBox1 img {
-        flex-direction: column;
-        justify-content: space-between;
-        align-content: center;
-        margin: 17px;
-      }
-      .infoBox1 p {
-        width: 100%;
-        height: auto;
-        padding-top: 12px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        font-family: "Dosis";
-        font-size: 15px;
-        font-weight: bold;
-        background-color: none;
-      }
-      .pieBox2 {
-        width: 480px;
-        height: 100%;
-        padding: 5%;
-      }
-      .redesSociales {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-top: 0%;
-      }
-      .pieBox3 {
-        width: 480px;
-        height: 50%;
-        color: #eb3238;
-      }
-      .listacontacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-content: left;
-        padding: 5% 5% 0% 35%;
-      }
-      .listacontacto a {
-        color: #eb3238;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .pieBox4 {
-        width: 480px;
-        height: 50%;
-        color: #eb3238;
-      }
-      .listaopciones {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-content: left;
-        padding: 0% 5% 5% 35%;
-      }
-      .listaopciones a {
-        color: #eb3238;
-        font-size: 20px;
-        font-weight: bold;
-      }
-  }
-  
-  .derechos {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: auto;
-    height: 30px;
-  }
-  .derechos p {
-    font-family: "Dosis";
-    font-size: 15px;
-    color: #eb3238;
-    text-align: center;
-  }
-  
   /* ------------------------------------------------------- PÁGINA TALISTA -------------------------------------------------------------------*/
   .talistaBox {
     display: flex;
@@ -696,7 +463,7 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    background-image: url(/assets/imagenes/talista.png);
+    background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/talista.png);
     background-size: 100%;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
@@ -706,12 +473,11 @@
  
   .titleTalista {
     width: 100%;
-    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
-    padding-top: 15%;
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
   
   .titleTalista p {
@@ -730,6 +496,8 @@
     width: 100%;
     height: 30%;
     background-color: #bf4953;
+    padding-top: 20px;
+    padding-bottom: 15px;
   }
   .subTitleTalista h2 {
     width: 100%;
@@ -786,7 +554,7 @@
     align-content: space-evenly;
     justify-items: stretch;
     align-items: stretch;
-    background-image: url(./../imagenes/talista.png);
+    background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/talista.png);
     background-size: 100%;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
@@ -839,7 +607,7 @@
   @media screen and (max-width:480px) {
     .talistaBox {
         width: 480px;
-        background-image: url(/assets/imagenes/talista.png);
+        background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/talista.png);
         background-size: 480px 100%;
         background-repeat: no-repeat, repeat;
         background-attachment: fixed;
@@ -849,7 +617,8 @@
     }
     .titleTalista {
         width: 480px;
-        height: auto;
+        padding-top: 25%;
+        padding-bottom: 25%;
     }
     .titleTalista p {
         align-items: center;
@@ -919,30 +688,22 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-    width: 100%;
-    height: 100%;
     background-color: transparent;
-  }
-  
-  .imageService {
-    background-image: url(/assets/imagenes/Servicios.png);
+    background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/Servicios.png);
     background-size: 100%;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
     width: 100%;
     height: auto;
-  }
-  
+  } 
   .titleServicio {
     width: 100%;
-    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
-    padding-top: 15%;
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
-  
   .titleServicio p {
     width: auto;
     height: 5%;
@@ -971,36 +732,22 @@
     letter-spacing: 2px;
     background-color: none;
   }
+
   /* --- SECCIÓN SERVICIOS CON GRILLAS ---*/
   .grid-container {
     display: grid;
-    width: 100%;
-    height: 100%;
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: none;
-  
     grid-template-columns: 35% auto;
     grid-template-rows: 24% 24% 24% 24%;
-  
     column-gap: 15px;
     row-gap: 15px;
-  
     justify-content: space-evenly;
     align-content: space-evenly;
-  
     justify-items: stretch;
     align-items: stretch;
-  
-    background-image: url(/assets/imagenes/Servicios.png);
-    background-size: 100%;
-    background-repeat: no-repeat, repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: auto;
   }
-  
   .image1,
   .image2,
   .image3,
@@ -1010,7 +757,6 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  
   .text1,
   .text2,
   .text3,
@@ -1020,7 +766,6 @@
     padding: 10px;
     border-radius: 10px;
   }
-  
   .text1 h3,
   .text2 h3,
   .text3 h3,
@@ -1030,7 +775,6 @@
     text-align: center;
     font-family: "Dosis";
   }
-  
   .text1 li,
   .text2 li,
   .text3 li,
@@ -1042,9 +786,74 @@
     letter-spacing: 1px;
   }
   
+  @media screen and (max-width:480px) {
+    .servicesBox {
+        width: 480px;
+        background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/Servicios.png);
+        background-size: 480px 100%;
+        background-repeat: no-repeat, repeat;
+        background-attachment: fixed;
+    }
+    .imageService {
+        width: 480px;
+        height: 300px;
+    }
+    .titleServicio {
+        width: 480px;
+        height: auto;
+    }
+    .titleServicio p {
+        font-size: 30px;
+    }
+    .subTitleService {
+        width: 100%;
+        height: auto;
+      }
+      .subTitleService h2 {
+        width: 460px;
+        font-size: 25px;
+        padding: 10px 10px 10px 10px;
+        margin: 0%;
+      }
+      .grid-container {
+        width: 480px;
+        height: auto;
+        grid-template-columns: 80%;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 1px;
+        row-gap: 10px;
+        justify-content:center;
+        align-content: center;
+        padding-bottom: 5px;
+      }
+      .image1,
+      .image2,
+      .image3,
+      .image4 {
+        width: auto;
+        height: auto;
+      }
+      .text1 h3,
+      .text2 h3,
+      .text3 h3,
+      .text4 h3,
+      .text1,
+      .text2,
+      .text3,
+      .text4 {
+        height: auto;
+      }
+      
+      .text1 li,
+      .text2 li,
+      .text3 li,
+      .text4 li {
+        font-size: 15px;
+      }
+  }
   /* ----------------------------------------------------------- PÁGINA CONTACTO ------------------------------------------------------------------*/
   .imageContact {
-    background-image: url(/assets/imagenes/Contactenos.png);
+    background: url(/2daPreentrega_BudeNatalia/assets/imagenes/Contactenos.png);
     background-size: 100%;
     background-repeat: no-repeat, repeat;
     width: 100%;
@@ -1052,11 +861,9 @@
   }
   .titleContact {
     width: 100%;
-    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
     padding-top: 20%;
   }
   .titleContact p {
@@ -1073,14 +880,17 @@
   
   @media screen and (max-width:480px) {
     .imageContact {
-        background-image: url(/assets/imagenes/Contactenos.png);
+        background: url(/2daPreentrega_BudeNatalia/assets/imagenes/Contactenos.png);
         width: 480px;
         height: 300px;
+        background-position: center;
       }
       .titleContact {
-        font-size: 25px;
         width: 100%;
         height: auto;
+        p {
+        font-size: 35px;
+       }
       }
   }
   /* ------------------- SECCIÓN CONTÁCTENOS aparece en Index-Empresa y Contactenos------------------- */
