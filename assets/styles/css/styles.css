@@ -1,13 +1,4 @@
 @charset "UTF-8";
-@media (max-width: 480px) {
-  .body {
-    width: auto;
-  }
-}
-@font-face {
-  font-family: "Dosis";
-  src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
-}
 /* ----------------- MENÚ con Boostrap -----------------*/
 .container-fluid {
   width: 100%;
@@ -38,13 +29,7 @@
   margin-left: 3%;
 }
 
-.logo2 {
-  width: 50px;
-  height: 40px;
-  border-radius: 10%;
-}
-
-.logo3 {
+.logo2, .logo3 {
   width: 50px;
   height: 40px;
   border-radius: 10%;
@@ -80,7 +65,6 @@
   justify-content: center;
   align-content: center;
 }
-
 .linkInicio img {
   width: 230px;
   height: 50px;
@@ -124,8 +108,7 @@
   width: 25%;
   height: 100%;
 }
-
-.redesSociales {
+.pieBox2 .redesSociales {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -138,16 +121,14 @@
   color: #eb3238;
   padding: 5px;
 }
-
-.listacontacto {
+.pieBox3 .listacontacto {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-content: left;
   padding: 10% 10% 10% 35%;
 }
-
-.listacontacto a {
+.pieBox3 .listacontacto a {
   padding: 5%;
   color: #eb3238;
   font-family: "Dosis";
@@ -162,16 +143,14 @@
   color: #eb3238;
   padding: 5px;
 }
-
-.listaopciones {
+.pieBox4 .listaopciones {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-content: left;
   padding: 10% 10% 10% 35%;
 }
-
-.listaopciones a {
+.pieBox4 .listaopciones a {
   padding: 5%;
   color: #eb3238;
   font-family: "Dosis";
@@ -189,37 +168,37 @@
     height: auto;
     background-color: #ffffff;
   }
-  .pieBox1 {
+  .piedepagina .pieBox1 {
     width: auto;
     color: #eb3238;
   }
-  .linkInicio {
+  .piedepagina .pieBox1 .linkInicio {
     width: 480px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  .linkInicio img {
+  .piedepagina .pieBox1 .linkInicio img {
     width: 230px;
     height: 50px;
     margin-top: 5px;
     color: #eb3238;
   }
-  .columnaBox1 {
+  .piedepagina .pieBox1 .columnaBox1 {
     width: 480px;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .iconosBox1 img {
+  .piedepagina .pieBox1 .iconosBox1 img {
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
     margin: 17px;
   }
-  .infoBox1 p {
+  .piedepagina .pieBox1 .infoBox1 p {
     width: 100%;
     height: auto;
     padding-top: 12px;
@@ -231,47 +210,47 @@
     font-weight: bold;
     background-color: none;
   }
-  .pieBox2 {
+  .piedepagina .pieBox2 {
     width: 480px;
     height: 100%;
     padding: 5%;
   }
-  .redesSociales {
+  .piedepagina .pieBox2 .redesSociales {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 0%;
   }
-  .pieBox3 {
+  .piedepagina .pieBox3 {
     width: 480px;
     height: 50%;
     color: #eb3238;
   }
-  .listacontacto {
+  .piedepagina .pieBox3 .listacontacto {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: left;
+    text-align: center;
     padding: 1%;
   }
-  .listacontacto a {
+  .piedepagina .pieBox3 .listacontacto a {
     color: #eb3238;
     font-size: 20px;
     font-weight: bold;
   }
-  .pieBox4 {
+  .piedepagina .pieBox4 {
     width: 480px;
     height: 50%;
     color: #eb3238;
   }
-  .listaopciones {
+  .piedepagina .listaopciones {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: left;
+    text-align: center;
     padding: 1%;
   }
-  .listaopciones a {
+  .piedepagina .listaopciones a {
     color: #eb3238;
     font-size: 20px;
     font-weight: bold;
@@ -284,7 +263,6 @@
   width: auto;
   height: 30px;
 }
-
 .derechos p {
   font-family: "Dosis";
   font-size: 15px;
@@ -292,6 +270,11 @@
   text-align: center;
 }
 
+@media (max-width: 480px) and (min-width: 600px) {
+  .body {
+    width: auto;
+  }
+}
 /* ----------------------------------- PÁGINA INDEX --------------------------------------*/
 @media (max-width: 480px) {
   .image-container {
