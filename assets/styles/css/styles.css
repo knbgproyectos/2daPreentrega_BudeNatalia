@@ -169,11 +169,11 @@
     justify-content: center;
     width: 480px;
     height: auto;
-    background-color: #ffffff;
+    background-color: #bf4953;
   }
   .piedepagina .pieBox1 {
     width: auto;
-    color: #eb3238;
+    color: #ffffff;
   }
   .piedepagina .pieBox1 .linkInicio {
     width: 480px;
@@ -200,6 +200,7 @@
     justify-content: space-between;
     align-content: center;
     margin: 17px;
+    padding-top: 4px;
   }
   .piedepagina .pieBox1 .infoBox1 p {
     width: 100%;
@@ -227,7 +228,6 @@
   .piedepagina .pieBox3 {
     width: 480px;
     height: 50%;
-    color: #eb3238;
   }
   .piedepagina .pieBox3 .listacontacto {
     display: flex;
@@ -237,24 +237,23 @@
     padding: 1%;
   }
   .piedepagina .pieBox3 .listacontacto a {
-    color: #eb3238;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
   }
   .piedepagina .pieBox4 {
     width: 480px;
     height: 50%;
-    color: #eb3238;
   }
-  .piedepagina .listaopciones {
+  .piedepagina .pieBox4 .listaopciones {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
     padding: 1%;
   }
-  .piedepagina .listaopciones a {
-    color: #eb3238;
+  .piedepagina .pieBox4 .listaopciones a {
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
   }
