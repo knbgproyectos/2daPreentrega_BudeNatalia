@@ -1,5 +1,37 @@
+@font-face {
+    font-family: "Dosis";
+    src: url("./../fuente/Dosis/static/Dosis-Regular.ttf");
+  }
+
 $font-site: "Dosis";
 $color-red: #bf4953;
 $color-text: #ffffff;
 $color-hover: #f2949c;
 $color-red2: #eb3238;
+
+@mixin flex-row-space-evently { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}   
+@mixin flex-row-wrap-space-between {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+@mixin flex-colum-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin flex-colum-space-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@mixin flex-colum-space-evenly {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
