@@ -56,7 +56,7 @@
             @include flex-colum-center;
             background-color: $color-red;
             width: 100%;
-            height: 80%;
+            height: auto;
             padding: 5%;
             margin: 10px;
             margin-top: 10px;
@@ -79,8 +79,8 @@
   @media (min-width: 481px) and (max-width: 600px) {
     .image-container {
         position: flex;
-        width: auto;
-        height: 100%;
+        width: 600px;
+        height: auto;
         background-color: none;
         background-position: center;
         background-repeat: no-repeat;
@@ -91,7 +91,7 @@
       }
     .titleOpciones {
       display: block;
-      width: 100%;
+      width: 600px;
       height: 110px;
       background-color: $color-red;
       h2 {
@@ -108,6 +108,7 @@
     }   
     .opciones {
         @include flex-row-wrap-space-between;
+        width: 600px;
         height: 50%;
         padding-top: 5px;
         a {
@@ -458,8 +459,6 @@
         background-color: none;
       }
   }
-   
-  
   .textTalista {
     width: auto;
     height: 400px;
@@ -587,10 +586,85 @@
             text-align: justify;
           }
     }
-    
-   
     .grid-containerTalista {
         width: 480px;
+        height: auto;
+        grid-template-areas:
+        "lista"
+        "cotizar"
+        "confirmar"
+        "retirar";
+        grid-template-columns: 80%;
+        grid-template-rows: 10% 10% 10% 10%;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content:space-around;
+        align-content: space-evenly;
+    }
+    .imageLista,
+    .imageCotizar,
+    .imageConfirmar,
+    .imageRetirar {
+        width: auto;
+        height: auto;
+  }
+    .lista,
+    .cotizar,
+    .confirmar,
+    .retirar {
+        height: auto;
+        padding: 25px;
+        p {
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .talistaBox {
+        width: 600px;
+        background-image: url(/2daPreentrega_BudeNatalia/assets/imagenes/talista.png);
+        background-size: 480px 100%;
+        background-repeat: no-repeat, repeat;
+        background-attachment: fixed;
+    }
+    .imageTalista {
+        width: 600px;
+    }
+    .titleTalista {
+        width: 600px;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        p {
+            align-items: center;
+            font-size: 25px;    
+    }
+    }
+    .subTitleTalista {
+        width: 100%;
+        height: auto;
+        h2 {
+            width: 100%;
+            font-size: 20px;
+            padding: 10px 10px 10px 10px;
+            margin: 0%;
+            text-align: center;
+        }
+    }
+    .textTalista {
+        width: auto;
+        height: auto;
+        p{
+            font-size: 15px;
+        }
+        a {
+            font-size: 15px;
+            text-align: justify;
+          }
+    }
+    .grid-containerTalista {
+        width: 580px;
         height: auto;
         grid-template-areas:
         "lista"
@@ -846,6 +920,11 @@
     width: 100%;
     height: 600px;
   }
+
+  .mapGoogle {
+    width: 100%;
+    margin: 0;
+  }
   
   @media screen and (max-width:480px) {
     .contactenos {
@@ -867,8 +946,7 @@
             text-align: center;
             padding: 25px;
           } 
-      }  
-       
+      }   
       .contactBox {
         display: flex;
         flex-direction: column;
@@ -877,11 +955,47 @@
         width: 480px;
         height:auto;
       }
-      .iframe {
+      .mapGoogle {
         width: 480px;
         margin: 0;
       }
   }
+
+  @media screen and (min-width: 481px) and (max-width: 600px){
+    .contactenos {
+        width: 600px;
+        height: auto;
+        font-family: $font-site;  
+        padding-top: 5%;
+        margin: 5px;
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            color: $color-red;
+            text-align: center;
+          }   
+          p {
+            font-family: $font-site;  
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 25px;
+          } 
+      }  
+      .contactBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height:auto;
+      }
+      .mapGoogle {
+        width: 600px;
+        margin: 0;
+      }
+  }
+  
   /* ------------------ FORMULARIO DE CONTACTO --------------------*/
   .formBox {
     width: 45%;
@@ -953,6 +1067,41 @@
         font-family: $font-site;
       }
   }
+
+  @media screen and (min-width: 481px) and (max-width: 600px) {
+    .formBox {
+        width: 540px;
+        height: 130%;
+        border-radius: 40px;
+        padding: 17px;
+        background-color: $color-red;
+       @include  flex-colum-center;
+        font-family: $font-site;  
+        font-size: 14px;
+        color: $color-text;
+      }
+      #userName, 
+      #userTelephone,
+      #userEmail {
+        height: 20px;
+        font-family: $font-site;
+      }
+      #userOption {
+        height: 26px;
+        font-family: $font-site;
+      }
+      #fileuserDescription {
+        height: 200px;
+        margin-top: 1%;
+        margin-bottom: 4%;
+        display: block;
+        font-family: $font-site;
+      }
+      .botonesBox {
+        @include flex-row-space-evently;
+        font-family: $font-site;
+      }
+  }
   
   /* ----------------- INFORMACIÓN DE CONTACTO ---------------------*/
   .infoBox {
@@ -979,7 +1128,6 @@
     font-weight: 500;
   }
   
-  
   @media screen and (max-width:480px) {
     .infoBox {
         width: 440px;
@@ -987,21 +1135,38 @@
         border-radius: 40px;
         padding: 15px;
         background-color: #bf4953;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        @include flex-row-space-evently;
         color: #ffffff;
       }
       .iconoslist {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include flex-colum-space-evenly;
         align-items: center;
       }
       .infoList p {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include flex-colum-space-evenly;
+        text-align: left;
+        font-family: "Dosis";
+        font-size: 18px;
+        padding-top: 17%;
+      }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 600px) {
+    .infoBox {
+        width: 540px;
+        height: 556px;
+        border-radius: 40px;
+        padding: 15px;
+        background-color: #bf4953;
+        @include flex-row-space-evently;
+        color: #ffffff;
+      }
+      .iconoslist {
+        @include flex-colum-space-evenly;
+        align-items: center;
+      }
+      .infoList p {
+        @include flex-colum-space-evenly;
         text-align: left;
         font-family: "Dosis";
         font-size: 18px;

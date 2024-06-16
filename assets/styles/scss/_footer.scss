@@ -211,6 +211,110 @@
       }
       }
     
+      @media screen and (min-width: 481px) and (max-width: 600px) {
+        .piedepagina {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 600px;
+          height:auto;
+          background-color: $color-red;
+  
+          .pieBox1 {
+              width: auto;
+              color: $color-text;
+              .linkInicio {
+                  width: 600px;
+                  height: 50px;
+                  display: flex;
+                  justify-content: center;
+                  align-content: center;
+                  img {
+                      width: 230px;
+                      height: 50px;
+                      margin-top: 5px;
+                      color: $color-red2;
+                    }
+                }
+                .columnaBox1 {
+                  width: 600px;
+                  height: auto;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-evenly;       
+                }
+                .iconosBox1 {
+                  img {
+                      flex-direction: column;
+                      justify-content: space-between;
+                      align-content: center;
+                      margin: 17px;
+                      padding-top: 4px;
+                    }
+                }
+                .infoBox1 {
+                  p {
+                      width: 100%;
+                      height: auto;
+                      padding-top: 12px;
+                      display: flex;
+                      flex-direction: column;
+                      text-align: left;
+                      font-family: $font-site;
+                      font-size: 15px;
+                      font-weight: bold;
+                      background-color: none;
+                    }
+                }
+            }
+            .pieBox2 {
+              width: 600px;
+              height: 100%;
+              padding: 5%;
+              .redesSociales {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-evenly;
+                  padding-top: 0%;
+                }
+            }
+            .pieBox3 {
+              width: 600px;
+              height: 50%;
+              .listacontacto {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-evenly;
+                  text-align: center;
+                  padding: 1%;
+                  a {
+                      color: $color-text;
+                      font-size: 20px;
+                      font-weight: bold;
+                    }
+                }
+            }
+            .pieBox4 {
+              width: 600px;
+              height: 50%;
+              .listaopciones {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                text-align: center;
+                padding: 1%;
+            a {
+              color: $color-text;
+              font-size: 20px;
+              font-weight: bold;
+              }
+           }
+          }
+        }
+      }
+
+
+
   
   .derechos {
     display: flex;
