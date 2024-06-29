@@ -368,13 +368,8 @@
   text-align: center;
 }
 
-@media (max-width: 480px) and (min-width: 600px) {
-  .body {
-    width: auto;
-  }
-}
 /* ----------------------------------- PÁGINA INDEX --------------------------------------*/
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .image-container {
     position: flex;
     width: 480px;
@@ -414,7 +409,7 @@
     height: 50%;
     padding-top: 5px;
   }
-  .opciones a :hover {
+  .opciones :hover {
     background-color: #f2949c;
   }
   .opcion1,
@@ -444,7 +439,7 @@
     text-align: center;
   }
 }
-@media (min-width: 481px) and (max-width: 600px) {
+@media screen and (min-width: 481px) and (max-width: 600px) {
   .image-container {
     position: flex;
     width: 600px;
@@ -483,7 +478,7 @@
     height: 50%;
     padding-top: 5px;
   }
-  .opciones a :hover {
+  .opciones :hover {
     background-color: #f2949c;
   }
   .opcion1,
@@ -516,7 +511,7 @@
     text-align: center;
   }
 }
-@media (min-width: 601px) and (max-width: 1279px) {
+@media screen and (min-width: 601px) and (max-width: 1279px) {
   .image-container {
     position: flex;
     width: auto;
@@ -556,7 +551,7 @@
     margin: 0;
     background-color: none;
   }
-  .opciones a :hover {
+  .opciones :hover {
     background-color: #f2949c;
   }
   .opcion1,
@@ -594,7 +589,7 @@
     border-radius: 40px;
   }
 }
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .image-container {
     position: flex;
     width: auto;
@@ -634,7 +629,7 @@
     margin: 0;
     background-color: none;
   }
-  .opciones a :hover {
+  .opciones :hover {
     background-color: #f2949c;
   }
   .opcion1,
@@ -1304,6 +1299,7 @@ a :hover {
   width: 100%;
   font-family: "Dosis";
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 .contactenos h1 {
   font-size: 40px;
@@ -1556,9 +1552,9 @@ a :hover {
 @media screen and (max-width: 480px) {
   .infoBox {
     width: 440px;
-    height: 556px;
+    height: auto;
     border-radius: 40px;
-    padding: 15px;
+    padding: 3%;
     background-color: #bf4953;
     display: flex;
     flex-direction: row;
@@ -1577,8 +1573,9 @@ a :hover {
     justify-content: space-evenly;
     text-align: left;
     font-family: "Dosis";
-    font-size: 18px;
-    padding-top: 17%;
+    font-size: 15px;
+    padding: 1%;
+    width: 300px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
